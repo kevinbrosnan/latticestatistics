@@ -1,0 +1,18 @@
+Package: latticestats
+Title: Statistical Methods for Lattice Structures
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Kevin",
+           family = "Brosnan",
+           role = c("aut", "cre"),
+           email = "kevin.c.brosnan@gmail.com",
+           comment = c(ORCID = "0000-0002-0952-2134"))
+Description: Package provides methods for analysing lattice structured data.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 2.1.0)
+RoxygenNote: 7.0.0
+Imports: 
+    covr
