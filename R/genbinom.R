@@ -26,9 +26,7 @@
 
 dgenbinom <- Vectorize( function(g, pi, theta, size) {
 
-  if (missing(g)) {
-    stop('g is missing and is a required input')
-  } else if (!is.numeric(g)) {
+  if (!is.numeric(g)) {
     stop('g must be an integer valued input')
   } else if (floor(g) != g) {
     stop('g must be an integer valued input')
@@ -79,9 +77,7 @@ dgenbinom <- Vectorize( function(g, pi, theta, size) {
 
 pgenbinom <- Vectorize( function(g, pi, theta, size, lower.tail = TRUE) {
 
-  if (missing(g)) {
-    stop('g is missing and is a required input')
-  } else if (!is.numeric(g)) {
+  if (!is.numeric(g)) {
     stop('g must be an integer valued input')
   } else if (floor(g) != g) {
     stop('g must be an integer valued input')
@@ -137,9 +133,7 @@ pgenbinom <- Vectorize( function(g, pi, theta, size, lower.tail = TRUE) {
 
 qgenbinom <- Vectorize( function(p, pi, theta, size, lower.tail = TRUE) {
 
-  if (missing(p)) {
-    stop('p is missing and is a required input')
-  } else if (!is.numeric(p)) {
+  if (!is.numeric(p)) {
     stop('p must be a numeric argument')
   } else if (p < 0 | p > 1) {
     stop('p must be a probability')
